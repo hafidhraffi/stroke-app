@@ -9,6 +9,7 @@ import { Dropdown } from "primereact/dropdown";
 import toast from "react-hot-toast";
 
 type ClassificationInputs = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     patient_name: any;
     ct_img: FileList;
 }
@@ -83,7 +84,8 @@ function ClassificationPage() {
         );
     };
 
-    const optionSuccessTemplate = (option) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const optionSuccessTemplate = (option: any) => {
         return (
             <>
                 <p>{option.realname} ({option.username})</p>
@@ -91,7 +93,8 @@ function ClassificationPage() {
         );
     };
 
-    const valueTemplate = (value) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const valueTemplate = (value: any) => {
         if (value) {
             return (
                 <>
@@ -168,7 +171,8 @@ function ClassificationPage() {
     const bleedingNote = "Model mendeteksi adanya indikasi perdarahan di dalam otak, yang dapat mengarah pada stroke Hemorrhagic. Heatmap menyoroti area yang diduga mengalami penumpukan darah abnormal. Penanganan medis darurat sangat diperlukan."
     const ischemiaNote = "Model mendeteksi kemungkinan adanya penurunan aliran darah atau penyumbatan pembuluh darah, yang dapat mengindikasikan stroke Ischemic. Heatmap menyoroti area otak yang dicurigai mengalami kelainan. Disarankan untuk segera melakukan pemeriksaan medis."
     const normalNote = "Model tidak mendeteksi adanya kelainan signifikan pada otak. Heatmap terlihat menyebar tanpa adanya fokus pada area tertentu, sehingga hasilnya cenderung normal. Namun, tetap disarankan untuk melakukan pemeriksaan klinis apabila gejala masih dirasakan."
-    const diagnoseOptionTemplate = (option) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const diagnoseOptionTemplate = (option: any) => {
         return (
             <p>{option == "Bleeding" ? "Hemorrhagic" : option == "Ischemia" ? "Ischemic" : "Normal"}</p>
         );

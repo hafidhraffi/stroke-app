@@ -1,0 +1,16 @@
+fastapi==0.116.1
+uvicorn==0.35.0
+python-jose[cryptography]==3.5.0
+bcrypt==5.0.0
+python-dotenv==1.1.1
+sqlalchemy==2.0.43
+psycopg2-binary==2.9.11
+python-multipart==0.0.20
+httpx==0.28.1
+pydantic==2.11.7
+tensorflow-cpu==2.10.0
+keras==2.10.0
+numpy==1.23.5
+h5py==3.14.0
+pillow==11.3.0
+opencv-python-headless==4.6.0.66
